@@ -1,9 +1,9 @@
-# [GitHub Stats Visualization](https://github.com/jstrieb/github-stats)
+# [GitHub Stats Visualization](https://github.com/kojofosu/github-stats)
 
-<a href="https://github.com/jstrieb/github-stats">
+<a href="https://github.com/kojofosu/github-stats">
 
-![](https://github.com/jstrieb/github-stats/blob/master/generated/overview.svg)
-![](https://github.com/jstrieb/github-stats/blob/master/generated/languages.svg)
+![](https://github.com/kojofosu/github-stats/blob/master/generated/overview.svg)
+![](https://github.com/kojofosu/github-stats/blob/master/generated/languages.svg)
 
 </a>
 
@@ -69,7 +69,7 @@ For more information on inaccuracies, see issue
    - Some users are reporting that it can take a few minutes for the personal
      access token to work. For more, see 
      [#30](https://github.com/jstrieb/github-stats/issues/30).
-2. Click [here](https://github.com/jstrieb/github-stats/generate) to create a
+2. Click [here](https://github.com/kojofosu/github-stats/generate) to create a
    copy of this repository. Note: this is not the same as forking a copy
    because it copies everything fresh, without the huge commit history. 
 3. If this is the README of your fork, click [this
@@ -79,15 +79,15 @@ For more information on inaccuracies, see issue
 4. Create a new secret with the name `ACCESS_TOKEN` and paste the copied
    personal access token as the value.
 5. It is possible to change the type of statistics reported.
-   - To ignore certain repos, add them (in owner/name format e.g.,
-     `jstrieb/github-stats`) separated by commas to a new secret—created as
+   - To ignore certain repos, add them (in owner/repoName format e.g.,
+     `kojofosu/github-stats`) separated by commas to a new secret—created as
      before—called `EXCLUDED`.
    - To ignore certain languages, add them (separated by commas) to a new
      secret called `EXCLUDED_LANGS`.
    - To show statistics only for "owned" repositories and not forks with
      contributions, add an environment variable (under the `env` header in the
      [main
-     workflow](https://github.com/jstrieb/github-stats/blob/master/.github/workflows/main.yml))
+     workflow](https://github.com/kojofosu-stats/blob/master/.github/workflows/main.yml))
      called `EXCLUDE_FORKED_REPOS` with a value of `true`.
 6. Go to the [Actions
    Page](../../actions?query=workflow%3A"Generate+Stats+Images") and press "Run
